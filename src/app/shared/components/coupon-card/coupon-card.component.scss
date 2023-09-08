@@ -1,0 +1,55 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    height: 230px;
+    border-radius: 15px;
+    background-clip: border-box;
+    border: 1px solid #00000020;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    .images-container {
+        position: relative;
+        .background-brand {
+            background-color: #F0F0F0;
+            display: flex;
+            justify-content: center;
+            height: 115px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            .logo-img {
+                width: 70%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .pill {
+            position: absolute;
+            padding: 5px;
+            background-color: #AAD9F9;
+            border-radius: 15px;
+            width: fit-content;
+            bottom: -10px;
+            left: 10px;
+            span {
+                padding: 5px;
+                font-size: 13px;
+                font-weight: 600;
+            }
+        }
+    }
+    .info-txt {
+        .brand-name {
+            position: relative;
+            left: 10px;
+            top: 10px;
+            font-size: 10px;
+            color: #ADADAD;
+        }
+        .promo {
+            position: relative;
+            top: 5px;
+            left: 10px;
+            font-weight: 600;
+        }
+    }
+}
