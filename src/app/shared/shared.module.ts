@@ -5,6 +5,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MaterialModule } from '../material.module';
 import { CategoryCouponComponent } from './components/category-coupon/category-coupon.component';
+import { BrandCardComponent } from './components/brand-card/brand-card.component';
 
 
 
@@ -12,7 +13,8 @@ import { CategoryCouponComponent } from './components/category-coupon/category-c
   declarations: [
     HeaderComponent,
     CategoryCouponComponent,
-    FooterComponent
+    FooterComponent,
+    BrandCardComponent
   ],
   imports: [
     CommonModule,
