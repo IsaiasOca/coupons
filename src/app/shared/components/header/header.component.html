@@ -1,1 +1,31 @@
-<p>header works!</p>
+<div class="mobile">
+    <div>
+        <button (click)="toggleMenu()">
+            <img src="../../../../assets/svg/icon_menu.svg">
+        </button>
+    </div>
+    <div class="side-menu" [class.active]="activeMenu">
+        <button (click)="toggleMenu()">
+            <img src="../../../../assets/svg/close-icon.svg">
+        </button>
+        <mat-list>
+            <mat-list-item>Log In <i class='bx bx-log-in'></i></mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Link your card</mat-list-item>
+          </mat-list>
+    </div>
+</div>
+<div class="desktop">
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <button mat-stroked-button>LOG IN <i class='bx bx-chevron-right'></i></button>
+                </li>
+                <li>
+                    <button mat-raised-button color="primary">LINK YOUR CARD <i class='bx bx-chevron-right'></i></button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
