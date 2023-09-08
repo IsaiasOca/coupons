@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title-text {
+        p {
+            text-align: center;
+            font-size: 40px;
+        }
+    }
+    .categories {
+        padding: 1em;
+    }
+}
+
+.mat-mdc-chip-set .mdc-evolution-chip-set__chips{
+    justify-content: center !important;
+}
+
+@media screen and (min-width: 54.438em){
+    .container {
+        .title-text {
+            p {
+                text-align: center;
+                font-size: 45px;
+            }
+        }
+    }
+}

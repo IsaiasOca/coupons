@@ -1,3 +1,10 @@
-<mat-chip-listbox aria-label="Categories">
-    <mat-chip-option *ngFor="let category of categoriesList">{{ category.nombre_categoria }}</mat-chip-option>
-</mat-chip-listbox>
+<div class="container">
+    <div class="title-text">
+        <p>Explore Instant Coupons</p>
+    </div>
+    <div class="categories">
+        <mat-chip-listbox aria-label="Categories">
+            <mat-chip-option *ngFor="let category of categoriesList">{{ category.nombre_categoria }}</mat-chip-option>
+        </mat-chip-listbox>
+    </div>
+</div>

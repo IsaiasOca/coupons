@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { MaterialModule } from '../material.module';
 import { CategoryCouponComponent } from './components/category-coupon/category-coupon.component';
 
@@ -10,14 +11,17 @@ import { CategoryCouponComponent } from './components/category-coupon/category-c
 @NgModule({
   declarations: [
     HeaderComponent,
-    CategoryCouponComponent
+    CategoryCouponComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
     MaterialModule
   ],
   exports: [
-    CategoryCouponComponent
+    CategoryCouponComponent,
+    HeaderComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }

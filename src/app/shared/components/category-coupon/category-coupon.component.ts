@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CategoryCouponService } from '../../services/category-coupon.service';
-import { Category } from 'src/app/models/category.model';
+import { Categories } from 'src/app/models/categories.model';
+
+
 
 @Component({
   selector: 'app-category-coupon',
@@ -9,7 +11,7 @@ import { Category } from 'src/app/models/category.model';
 })
 export class CategoryCouponComponent implements OnInit{
 
-  categoriesList: Category[] = []
+  categoriesList: Categories[] = [];
 
   constructor(private categoryCouponService: CategoryCouponService){
   }
@@ -21,7 +23,7 @@ export class CategoryCouponComponent implements OnInit{
   getAllCategories(){
     this.categoryCouponService.getCouponCategories()
     .subscribe(data => {
-      this.categoriesList = data;
+      this.categoriesList = data.Categorias;
       console.log(this.categoriesList);
     });
   }
