@@ -2,19 +2,18 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { Category } from 'src/app/models/category.model';
+import { environment } from 'src/environments/environment.development';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CategoryCouponService {
 
-  private apiUrl = 'https://api.viveplus.com.mx/v1/?key=t3stfr0ntAng2023$.&m=lista_categorias'
-
   constructor(
     private http: HttpClient
   ) { }
 
   getCouponCategories() {
-    return this.http.get<Category[]>(this.apiUrl);
+    return this.http.get<Category>(`${environment.principalURL}?m=lista_categorias`);
   }
 }

@@ -11,6 +11,8 @@ import { SharedModule } from './shared/shared.module';
 import { HttpRequestInterceptor } from './core/interceptors/http-request.interceptor';
 import { HttpResponseInterceptor } from './core/interceptors/http-response.interceptor';
 
+import { MaterialModule } from './material.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -20,7 +22,8 @@ import { HttpResponseInterceptor } from './core/interceptors/http-response.inter
     AppRoutingModule,
     NoopAnimationsModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    MaterialModule
   ],
   providers: [
     {

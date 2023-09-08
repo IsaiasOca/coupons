@@ -1,4 +1,5 @@
+import { Categories } from "./categories.model";
+
 export interface Category {
-    id_categoria: number;
-    nombre_categoria: string;
+    Categorias: Categories[]
 }
