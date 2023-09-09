@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="header-text">
+        <p>Unlock the full power of</p>
+    </div>
+    <div class="cards-list">
+        <app-brand-card
+        [listaMarcas]="marca"
+        *ngFor="let marca of listaMarcas"
+        ></app-brand-card>
+    </div>
+    <div class="click-to-action">
+        <button mat-raised-button color="primary">LINK YOUR CARD <i class='bx bx-chevron-right'></i></button>
+    </div>
+</div>

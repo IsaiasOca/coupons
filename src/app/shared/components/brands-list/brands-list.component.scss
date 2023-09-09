@@ -1,0 +1,26 @@
+.container {
+    background: linear-gradient(#0123AF, #fff);
+    .header-text {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        p {
+            font-size: 40px;
+            color: #fff;
+        }
+    }
+    .cards-list {
+        display: flex;
+        justify-content: center;
+
+    }
+    .click-to-action {
+        display: flex;
+        justify-content: center;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        button {
+            border-radius: 20px;
+        }
+    }
+}
