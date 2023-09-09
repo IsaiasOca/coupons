@@ -1,4 +1,5 @@
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 190px;
@@ -6,7 +7,7 @@
     border-radius: 15px;
     background-clip: border-box;
     border: 1px solid #00000020;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     .images-container {
         position: relative;
         .background-brand {
@@ -25,7 +26,7 @@
         .pill {
             position: absolute;
             padding: 5px;
-            background-color: #AAD9F9;
+            background-color: #FCE06F;
             border-radius: 15px;
             width: fit-content;
             bottom: -10px;
@@ -50,6 +51,19 @@
             top: 5px;
             left: 10px;
             font-weight: 600;
+            margin: 0;
+            font-size: 13px;
+            width: 170px;
+            height: 44px;
+            overflow: hidden;
         }
+    }
+    a {
+        position: absolute;
+        bottom: 8px;
+        left: 10px;
+        text-decoration: none;
+        font-size: 13px;
+        color: #000;
     }
 }

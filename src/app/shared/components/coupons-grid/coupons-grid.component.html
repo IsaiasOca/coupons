@@ -1,11 +1,14 @@
-<app-coupons-filter></app-coupons-filter>
 <div class="coupons-container">
     <div class="grid-coupons">
-        <app-coupon-card
+        <!--<app-coupon-card
         [listaMarcas]="marca"
         *ngFor="let marca of listaMarcas"
-        ></app-coupon-card>
+        ></app-coupon-card>-->
     </div>
+    <app-coupon-list-card
+        [listaMarcas]="marca"
+        *ngFor="let marca of listaMarcas"
+        ></app-coupon-list-card>
 </div>
 <div class="button-load">
     <button mat-button (click)="getBrandslist()">MORE INSTANT COUPONS <i class='bx bx-chevron-right'></i></button>

@@ -13,10 +13,13 @@ export class ListaMarcasService {
     private http: HttpClient
   ) { }
 
-  getBrandsList(limit: number, offset: number) {
-    let params = new HttpParams();
-    params = params.set('limit', limit);
-    params = params.set('offset', offset);
+  getBrandsList(limit: number, offset: number, mix?: boolean) {
+    let params = new HttpParams()
+        .set('limit', limit)
+        .set('offset', offset)
+    if(mix){
+      params = params.set('mix', mix)
+    }
 
     return this.http.get<Brand>(`${environment.principalURL}?m=lista_marcas`, { params });
   }

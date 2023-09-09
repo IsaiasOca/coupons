@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ListaMarcasService } from '../../services/lista-marcas.service';
 import { Brands } from 'src/app/models/brands.model';
 

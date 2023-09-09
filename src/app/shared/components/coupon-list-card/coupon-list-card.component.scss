@@ -1,0 +1,94 @@
+.card {
+    position: relative;
+    display: flex;
+    border: 1px solid;
+    border-radius: 15px;
+    border-radius: 15px;
+    background-clip: border-box;
+    border: 1px solid #00000020;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin: 1em;
+    height: 110px;
+    .logo-img{
+        width: 150px;
+        object-fit: contain;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .info-txt {
+        display: flex;
+        width: 200px;
+        border-left-style: dashed;
+        .pill {
+            position: absolute;
+            padding: 4px;
+            background-color: #FCE06F;
+            border-radius: 15px;
+            width: fit-content;
+            top: 6px;
+            right: 40%;
+            display: flex;
+            span {
+                font-size: 10px;
+            }
+        }
+        .brand-name {
+            font-size: 10px;
+            color: #ADADAD;
+            position: absolute;
+            top: 10px;
+            margin: 0;
+            width: 80px;
+            height: 20px;
+            left: 65%;
+        }
+        .promo {
+            position: absolute;
+            margin: 0;
+            bottom: 20%;
+            height: 38px;
+            left: 45%;
+        }
+        a {
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+            font-size: 13px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+    .card {
+        .info-txt{
+            .pill {
+                right: 55%;
+            }
+            .brand-name {
+                left: 50%;
+            }
+            .promo {
+                left: 33%;
+            }
+            width: 340px;
+        }
+    }
+}
+@media screen and (min-width: 64em) {
+    .card {
+        .info-txt{
+            .pill {
+                right: 60%;
+            }
+            .brand-name {
+                left: 45%;
+            }
+            .promo {
+                left: 29%;
+            }
+            width: 400px;
+        }
+    }
+}

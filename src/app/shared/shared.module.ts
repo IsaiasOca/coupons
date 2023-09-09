@@ -10,6 +10,7 @@ import { BrandsListComponent } from './components/brands-list/brands-list.compon
 import { CouponCardComponent } from './components/coupon-card/coupon-card.component';
 import { CouponsGridComponent } from './components/coupons-grid/coupons-grid.component';
 import { CouponsFilterComponent } from './components/coupons-filter/coupons-filter.component';
+import { CouponListCardComponent } from './components/coupon-list-card/coupon-list-card.component';
 
 
 
@@ -22,7 +23,8 @@ import { CouponsFilterComponent } from './components/coupons-filter/coupons-filt
     BrandsListComponent,
     CouponCardComponent,
     CouponsGridComponent,
-    CouponsFilterComponent
+    CouponsFilterComponent,
+    CouponListCardComponent
   ],
   imports: [
     CommonModule,

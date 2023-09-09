@@ -12,6 +12,7 @@ export class BrandsListComponent implements OnInit {
   listaMarcas: Brands[] = [];
   limit: number = 4;
   offset: number = 0;
+  mix: boolean = true;
 
   constructor(
     private listaMarcasService: ListaMarcasService
@@ -22,7 +23,7 @@ export class BrandsListComponent implements OnInit {
   }
 
   getBrandslist(){
-    this.listaMarcasService.getBrandsList(this.limit, this.offset)
+    this.listaMarcasService.getBrandsList(this.limit, this.offset, this.mix)
     .subscribe(data => {
       this.listaMarcas = this.listaMarcas.concat(data.Marcas);
       this.offset += this.limit;

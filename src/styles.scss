@@ -51,3 +51,9 @@ body { margin: 0; font-family: Ubuntu, "Helvetica Neue", sans-serif; }
 .mat-mdc-button .mdc-button__label{
   font-weight: 800 !important;
 }
+
+@media screen and (max-width: 40em){
+  .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{
+    font-size: 12px !important;
+  }
+}
