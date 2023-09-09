@@ -1,0 +1,25 @@
+.section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .text {
+        p {
+            font-size: 17px;
+            font-weight: 600;
+        }
+    }
+    .filter-buttons {
+        a {
+            border: 1px solid #3A42E4;
+            padding: 5px;
+            background-color: #3A42E4;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 20px;
+            margin: 5px;
+            position: relative;
+        }
+        
+    }
+}

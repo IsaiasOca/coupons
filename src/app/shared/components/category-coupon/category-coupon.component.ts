@@ -24,7 +24,6 @@ export class CategoryCouponComponent implements OnInit{
     this.categoryCouponService.getCouponCategories()
     .subscribe(data => {
       this.categoriesList = data.Categorias;
-      console.log(this.categoriesList);
     });
   }
 
