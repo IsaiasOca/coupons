@@ -1,14 +1,14 @@
 <div class="card">
     <div class="images-container">
         <div class="background-brand">
-            <img class="logo-img" src="../../../../assets/images/test_brand.jpg" alt="">
+            <img class="logo-img" [src]="listaMarcas.logo_marca" alt="">
         </div>
         <div class="pill">
             <span><i class='bx bxs-coupon'></i> Instant coupon</span>
         </div>
     </div>
     <div class="info-txt">
-        <p class="brand-name">Nombre marca</p>
-        <p class="promo">2% cashback on all Chevron fuel purchases</p>
+        <p class="brand-name">{{ listaMarcas.nombre_marca }}</p>
+        <p class="promo">{{ listaMarcas.promo_marca }}</p>
     </div>
 </div>

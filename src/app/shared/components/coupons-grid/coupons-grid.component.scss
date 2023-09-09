@@ -1,0 +1,14 @@
+.coupons-container{
+    display: flex;
+    justify-content: center;
+    .grid-coupons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px
+    }
+}
+.button-load{
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
