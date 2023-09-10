@@ -13,12 +13,15 @@ export class ListaMarcasService {
     private http: HttpClient
   ) { }
 
-  getBrandsList(limit: number, offset: number, mix?: boolean) {
+  getBrandsList(limit: number, offset: number, mix?: boolean, order?: string) {
     let params = new HttpParams()
         .set('limit', limit)
         .set('offset', offset)
     if(mix){
       params = params.set('mix', mix)
+    }
+    if(order){
+      params = params.set('orden', order)
     }
 
     return this.http.get<Brand>(`${environment.principalURL}?m=lista_marcas`, { params });

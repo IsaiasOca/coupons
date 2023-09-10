@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
 })
 export class CouponsFilterComponent {
 
+  gridLayout: boolean = false;
+
+  orderSelected: string = '';
+
+  changeLayout(){
+    console.log("grid layout", this.gridLayout)
+    this.gridLayout = !this.gridLayout;
+  }
 
 }

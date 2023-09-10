@@ -3,17 +3,20 @@
         <p>Featured Instant Coupons (135)</p>
     </div>
     <div class="filter-buttons">
-        <a href=""><i class='bx bx-list-ul'></i></a>
-        <a href=""><i class='bx bx-grid-alt'></i></a>
-        <mat-form-field>
-            <mat-label>SORT BY</mat-label>
-            <mat-select>
-              <mat-option value=""><i class='bx bx-sort-z-a'></i> Ascend</mat-option>
-              <mat-option value=""><i class='bx bx-sort-a-z'></i> Descend</mat-option>
-            </mat-select>
-          </mat-form-field>
+      <button (click)="changeLayout()" [class.active]="gridLayout == true"><i class='bx bx-list-ul'></i></button>
+      <button (click)="changeLayout()" [class.active]="gridLayout == false"><i class='bx bx-grid-alt'></i></button>
+      <mat-form-field>
+        <mat-label>SORT BY</mat-label>
+        <mat-select [(value)]="orderSelected">
+          <mat-option value="asc"><i class='bx bx-sort-a-z'></i> Ascend</mat-option>
+          <mat-option value="desc"><i class='bx bx-sort-z-a'></i> Descend</mat-option>
+        </mat-select>
+      </mat-form-field>
     </div>
 </div>
 <div class="container-coupons">
-  <app-coupons-grid></app-coupons-grid>
+  <app-coupons-grid
+    [gridLayout]="gridLayout"
+    [orderSelected]="orderSelected"
+  ></app-coupons-grid>
 </div>
