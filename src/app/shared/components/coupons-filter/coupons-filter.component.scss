@@ -9,16 +9,20 @@
         }
     }
     .filter-buttons {
-        a {
-            border: 1px solid #3A42E4;
+        button {
             padding: 5px;
-            background-color: #3A42E4;
-            color: #ffffff;
+            background-color: #fff;
+            color: #3A42E4;
             text-decoration: none;
-            border-radius: 10px;
+            border-radius: 5px;
+            border: none;
             font-size: 20px;
             margin: 5px;
             position: relative;
+            &.active {
+                background-color: #3A42E4;
+                color: #fff;
+            }
         }
         
     }

@@ -48,6 +48,10 @@ body { margin: 0; font-family: Ubuntu, "Helvetica Neue", sans-serif; }
   background-color: #fff !important;
 }
 
+.mat-mdc-form-field-infix{
+  width: 95px !important;
+}
+
 .mat-mdc-button .mdc-button__label{
   font-weight: 800 !important;
 }
